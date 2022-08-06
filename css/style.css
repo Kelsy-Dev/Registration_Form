@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+header h1 {
+    background-color: #2d3945;
+    color: white;
+    text-transform: uppercase;
+    margin-top: -8px;
+    padding: 5% 0;
+    width: 100vw;
+}
+header h1, h2, header p {
+    text-align: center;
+}
+header h2 {
+    color: #2d3945;
+    margin-top: 30px;
+}
+header p {
+    display: flex;
+    color: #9ca4ac;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 23px;
+    margin: 0 20px;
+    border-bottom: 4px solid black;
+}
+
+
+
+/* Forms --------- */
+
+
+form h1{
+    margin: 25px 0;
+}
+form, .first-col, .nd {
+    display: flex;
+    flex-wrap: wrap;
+    border: 0;
+    margin-top: 10px;
+}
+.second-col {
+    border: 0;
+}
+.first-col, .nd {
+    flex-direction: column;
+    flex: 1 100%;
+}
+
+::placeholder {
+    text-align: right;
+    padding-right: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select{
+    background-color: #eff0f1;
+    border-color: #eff0f1;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 13px;
+    max-width: 700px;
+}
+label {
+    margin-top: 5px;
+}
+.second-col label {
+    margin-left: 5px;
+}
+
+/* label:first-child {
+    margin-top: 10px;
+} */
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d3945;
+    margin: 15px 0;
+}
+.nd {
+    border-top: 3px solid black;
+}
+.lastp {
+    text-align: left;
+    color: #5e6770;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+input[type="radio"] {
+    margin-top: 20px;
+}
+
+textarea {
+    resize: none;
+    width: 950px;
+    max-width: 50%;
+    background-color: #eff0f1;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 15px;
+}
+input, label {
+    color: #9ca4ac;
+}
+.lst {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4ebbb5;
+    color: white;
+    padding: 17px 128px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 0;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+    color: #9ca4ac;
+
+}
+#zip {
+    width: 30%;
+    max-width: 170px;
+}
+
+/* media ---------- */
+
+@media screen and (min-width: 768px) {
+
+    header h2, header p, section {
+        margin: 0 25%;
+    }
+    header h2 {
+        margin-top: 30px;
+    }
+    
+}
