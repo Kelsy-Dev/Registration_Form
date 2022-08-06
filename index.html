@@ -23,7 +23,7 @@
     </header>
     
 
-    
+
     <!--Contact Info-->
 
        <section> 
@@ -46,9 +46,13 @@
            <input type="text" id="city" name="user_city" value="">
 
            <label>State</label>
-           <select aria-placeholder="Choose State"> 
-            <option> New York</option>
-            <option>Los Angeles</option>
+           <select> 
+            <option value="" disabled selected>Choose State</option>
+            <option value="new_york"> New York</option>
+            <option value="california">California</option>
+            <option value="texas">Texas</option>
+            <option value="florida">Florida</option>
+            <option value="ohio">Ohio</option>
            </select>
 
            <label for="zip">Zip Code</label>
@@ -62,13 +66,13 @@
             <legend><span class="title nd"> Newsletter </span></legend>
             <div class="lastp"><p>Select the newsletter you would like to receive</p></div> <br>
 
-            <input type="checkbox" id="html" value=""> 
+            <input type="checkbox" id="html" value="news_html" name="user_html"> 
             <label for="html">HTML News</label> <br>
 
-            <input type="checkbox" id="css" value="">
+            <input type="checkbox" id="css" value="news_css" name="user_">
             <label for="css">CSS News</label> <br>
 
-            <input type="checkbox" id="js" value="">
+            <input type="checkbox" id="js" value="news_js" name="user_">
             <label for="js">Javascript News</label>
 
             <div class="lastp"><p>Newsletter format</p></div>
