@@ -29,7 +29,13 @@ header p {
     padding: 10px;
     padding-bottom: 23px;
     margin: 0 20px;
-    border-bottom: 4px solid black;
+    border-bottom: 3px solid black;
+}
+hr {
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
 }
 
 
@@ -91,9 +97,7 @@ label {
     color: #2d3945;
     margin: 15px 0;
 }
-.nd {
-    border-top: 3px solid black;
-}
+
 .lastp {
     text-align: left;
     color: #5e6770;
@@ -150,12 +154,16 @@ button {
     max-width: 170px;
 }
 
+
 /* media ---------- */
 
 @media screen and (min-width: 768px) {
 
-    header h2, header p, section {
+    header h2, header p, section{
         margin: 0 25%;
+    }
+    hr {
+        margin: 3px 25%;
     }
     header h2 {
         margin-top: 30px;
@@ -165,6 +173,9 @@ button {
     }
     .copyright {
         margin-left: 150px;
+    }
+    .nd {
+        margin-right: 50vw;
     }
     
 }

@@ -20,76 +20,81 @@
         <h1>The Code Review</h1>
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr>
     </header>
     
 
 
     <!--Contact Info-->
 
-       <section> 
+    <section> 
         <form>
-        <fieldset class="first-col"> 
-            <legend> <span class="title st"> Contact Information </span></legend>
+            <fieldset class="first-col"> 
+                <legend> <span class="title st"> Contact Information </span></legend>
 
-            <label for="name">Full Name</label>
-           <input type="text" id="name" name="user_name" required placeholder="Required">
+                <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" required placeholder="Required">
+                
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email" required placeholder="Required">
             
-           <label for="email">Email Address</label>
-           <input type="email" id="email" name="user_email" required placeholder="Required">
-           
-           <label for="phone">Phone Number</label>
-           <input type="tel" id="phone" name="user_phone" value="">
-           
-           <label for="street">Street Address</label>
-           <input type="text" id="street" name="user_address" value="">
-           <label for="city">City</label>
-           <input type="text" id="city" name="user_city" value="">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user_phone" value="">
+            
+            <label for="street">Street Address</label>
+            <input type="text" id="street" name="user_address" value="">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city" value="">
 
-           <label>State</label>
-           <select id="state" name="user_state"> 
-            <option value="" disabled selected>Choose State</option>
-            <option value="new_york"> New York</option>
-            <option value="california">California</option>
-            <option value="texas">Texas</option>
-            <option value="florida">Florida</option>
-            <option value="ohio">Ohio</option>
-           </select>
+            <label>State</label>
+            <select id="state" name="user_state"> 
+                <option value="" disabled selected>Choose State</option>
+                <option value="new_york"> New York</option>
+                <option value="california">California</option>
+                <option value="texas">Texas</option>
+                <option value="florida">Florida</option>
+                <option value="ohio">Ohio</option>
+            </select>
 
-           <label for="zip">Zip Code</label>
-           <input type="text" id="zip" name="user_zipcode">
-        </fieldset>
-
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user_zipcode">
+            </fieldset>
+    </section>
+<hr>
 
     <!--Newsletter-->
 
-        <fieldset class="second-col">
-            <legend><span class="title nd"> Newsletter </span></legend>
-            <div class="lastp"><p>Select the newsletter you would like to receive</p></div> <br>
+    <section>
 
-            <input type="checkbox" id="html" value="news_html" name="user_html"> 
-            <label for="html">HTML News</label> <br>
+            <fieldset class="second-col">
+                <legend><span class="title nd"> Newsletter </span></legend>
+                <div class="lastp"><p>Select the newsletter you would like to receive</p></div> <br>
 
-            <input type="checkbox" id="css" value="news_css" name="user_">
-            <label for="css">CSS News</label> <br>
+                <input type="checkbox" id="html" value="news_html" name="user_html"> 
+                <label for="html">HTML News</label> <br>
 
-            <input type="checkbox" id="js" value="news_js" name="user_">
-            <label for="js">Javascript News</label>
+                <input type="checkbox" id="css" value="news_css" name="user_">
+                <label for="css">CSS News</label> <br>
 
-            <div class="lastp"><p>Newsletter format</p></div>
+                <input type="checkbox" id="js" value="news_js" name="user_">
+                <label for="js">Javascript News</label>
 
-            <input type="radio" id="htmlradio" name="user_format"> 
-            <label for="htmlradio">HTML</label> <br>
+                <div class="lastp"><p>Newsletter format</p></div>
 
-            <input type="radio" name="user_format" id="plain">
-            <label for="plain">Plain text</label>
+                <input type="radio" id="htmlradio" name="user_format"> 
+                <label for="htmlradio">HTML</label> <br>
 
-            <div class="lastp lst"><p>Other topics you'd like to hear about</p></div>
-            <textarea name="user_textarea" id="textarea" cols="30" rows="10"></textarea>
+                <input type="radio" name="user_format" id="plain">
+                <label for="plain">Plain text</label>
 
-            <button type="submit">Sign Up</button>
+                <div class="lastp lst"><p>Other topics you'd like to hear about</p></div>
+                <textarea name="user_textarea" id="textarea" cols="30" rows="10"></textarea>
 
-            <div class="copyright"><p>Copyright The Code Review</p></div>
-        </fieldset>
+                <button type="submit">Sign Up</button>
+
+                <div class="copyright"><p>Copyright The Code Review</p></div>
+            </fieldset>
+    </section>
         </form>
        </section>
     
