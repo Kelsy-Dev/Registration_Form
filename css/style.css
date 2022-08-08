@@ -164,19 +164,21 @@ footer p {
     .titles {
         margin: 25px 0;
     }
-    
-    .blockk {
-        display: inline-block;
-    }
 
-    input[type="text"],
+    .blockk {
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1 100%; 
+    }
+    
+
+    /* input[type="text"],
     input[type="email"],
     input[type="tel"],
     select {
-        float: right;
-        width: 60%;
-}
-    
-    
+        
+
+    } */
+ 
     
 }
