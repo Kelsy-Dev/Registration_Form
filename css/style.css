@@ -31,7 +31,7 @@ header p {
     border-bottom: 3px solid black;
 }
 hr {
-    margin: 3px 20px 35px;
+    margin: 3px 20px;
     border: 1px solid black;
 }
 .hr2 {
@@ -43,7 +43,7 @@ hr {
 /* -------Forms --------- */
 
 
-.first-col{
+fieldset:first-child{
     display: flex;
     flex-direction: column;
     margin-top: 35px;
@@ -53,6 +53,9 @@ hr {
 }
 .second-col label {
     margin-left: 5px;
+}
+fieldset:last-child {
+    background-color: beige;
 }
 
 .titles {
@@ -80,7 +83,7 @@ select{
     max-width: 700px;
 }
 input:focus {
-    background-color: rgb(244, 244, 186);
+    background-color: beige;
     color: black;
 }
 input[type="checkbox"] {
@@ -169,16 +172,17 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         flex: 1 100%; 
+        align-items: center;
     }
     
 
-    /* input[type="text"],
+    input[type="text"],
     input[type="email"],
     input[type="tel"],
     select {
-        
 
-    } */
+        flex-basis: 63%;
+    }
  
     
 }
