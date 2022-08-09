@@ -63,6 +63,9 @@ fieldset:last-child {
     font-weight: bold;
     color: #2d3945;
 }
+#zip {
+    width: 25%;
+}
 
 .blockk {
     display: flex;
@@ -81,11 +84,7 @@ select{
     border-radius: 5px;
     margin: 6px 0 13px;
     max-width: 700px;
-}
-input:focus {
-    background-color: beige;
-    color: black;
-}
+} 
 input[type="checkbox"] {
     margin-bottom: 20px;
 }
@@ -96,18 +95,40 @@ input, label {
     color: #9ca4ac;
 }
 
+
+
+/* -------Focus------ */
+
+
+input:focus {
+    background-color: beige;
+    color: black;
+}
+
+textarea:focus {
+    background-color: white;
+}
+select:focus {
+    background-color: beige;
+}
+:focus {
+    outline: 5px auto rgb(5, 138, 145);
+    border-radius: 3px;
+
+    transform: scale(1.05);
+}
+
+
+
+
 .newsp {
     text-align: left;
     color: #5e6770;
     margin-top: 10px;
 }
 
-.lst {
+.txtar {
     margin-top: 20px;
-}
-
-#zip {
-    width: 30%;
 }
 
 textarea {
@@ -168,10 +189,10 @@ footer p {
         margin: 25px 0;
     }
 
+    
     .blockk {
         flex-direction: row;
         justify-content: space-between;
-        flex: 1 100%; 
         align-items: center;
     }
     
@@ -182,6 +203,9 @@ footer p {
     select {
 
         flex-basis: 63%;
+    }
+    #zip {
+        flex-basis: calc(63%/2);
     }
  
     
