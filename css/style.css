@@ -102,13 +102,16 @@ input, label {
 input:focus {
     background-color: beige;
     color: black;
+    transition-duration: 1s;
 }
 
 textarea:focus {
     background-color: white;
+    transition-duration: 1s;
 }
 select:focus {
     background-color: beige;
+    transition-duration: 1s;
 }
 :focus {
     outline: 5px auto rgb(5, 138, 145);
@@ -143,7 +146,7 @@ textarea {
 button {
     background-color: #4ebbb5;
     color: white;
-    padding: 20px 199px;
+    padding: 20px;
     border-radius: 5px;
     font-size: 20px;
     border: 0;
